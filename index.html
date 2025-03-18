@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Assignment</title>
+    <link rel="stylesheet" href="./updstyle.css">
+    <script src="./updscript.js" defer></script>
+</head>
+<body>
+    <h2>Secret Santa Assignment Upload</h2>
+
+    <form action="upload.php" method="POST" enctype="multipart/form-data" id="uploadForm">
+        <label for="employeeFile">Upload Employee List (employees.csv):</label>
+        <input type="file" name="employeeFile" id="employeeFile" accept=".csv" required><br><br>
+
+        <label for="previousFile">Upload Previous Year Assignments (previous_assignments.csv):</label>
+        <input type="file" name="previousFile" id="previousFile" accept=".csv" ><br><br>
+
+        <button type="submit">Upload and Assign Secret Santa</button>
+    </form>
+</body>
+</html>
+
