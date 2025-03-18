@@ -32,11 +32,11 @@ class SecretSantaGame {
         }
 
         // Write the assignments to a new CSV
-        print_r($assignments);
+        //print_r($assignments);
         $filepath = "./uploads/secret_santa_assignments".time().".csv";
         CSVHandler::writeCSV($filepath, $assignments);
         echo "Secret Santa assignments have been successfully generated. <br>";
-        echo '<a href="uploads/secret_santa_assignments.csv" download>Download the Secret Santa Assignments</a>';
+        echo "<a href='$filepath' download>Download the Secret Santa Assignments</a>";
     }
 }
 ?>
